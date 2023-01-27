@@ -16,7 +16,9 @@ function Tilt({children}) {
       speed: 400,
       glare: true,
       'max-glare': 0.5,
+
     })
+    return () => tiltNode.vanillaTilt.destroy()
   },[])
   // div look fancy.
   // 💰 like this:
